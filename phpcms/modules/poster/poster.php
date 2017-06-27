@@ -216,7 +216,7 @@ class poster extends admin {
         if (is_numeric($_GET['click'])) {
         	$_GET['click'] = intval($_GET['click']);
         	$where .= " AND `type`='".$_GET['click']."'";
-        	
+        	$_GET['group'] = addslashes(urldecode(trim($_GET['group'])));
         	//如果设置了按地区或者按ip分类
 	        if ($_GET['group']) {
 	        	$group = " `".$_GET['group']."`";
