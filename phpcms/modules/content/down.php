@@ -84,11 +84,11 @@ class down {
 	}
 	
 	public function download() {
-		$a_k = trim($_GET['a_k']);
+		$a_k = safe_replace(trim($_GET['a_k']));
 		$a_k = sys_auth($a_k, 'DECODE', md5(PC_PATH.'down').pc_base::load_config('system','auth_key'));
 		if(empty($a_k)) showmessage(L('illegal_parameters'));
 		unset($i,$m,$f,$t,$ip);
-		$a_k = safe_replace($a_k);
+//		$a_k = safe_replace($a_k);
 		parse_str($a_k);		
 		if(isset($i)) $downid = intval($i);
 		if(!isset($m)) showmessage(L('illegal_parameters'));
