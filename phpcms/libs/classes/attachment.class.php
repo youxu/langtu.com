@@ -143,6 +143,9 @@ class attachment {
 	function download($field, $value,$watermark = '0',$ext = 'gif|jpg|jpeg|bmp|png', $absurl = '', $basehref = '')
 	{
 		global $image_d;
+                if($ext !== 'gif|jpg|jpeg|bmp|png'){
+                    if(!in_array(strtoupper($ext),array('JPG','GIF','BMP','PNG','JPEG'))) exit('附加扩展名必须为gif、jpg、jpeg、bmp、png');
+                }
 		$this->att_db = pc_base::load_model('attachment_model');
 		$upload_url = pc_base::load_config('system','upload_url');
 		$this->field = $field;
