@@ -2,11 +2,11 @@
 
 return array (
 	'default' => array (
-		'hostname' => 'localhost',
+		'hostname' => '127.0.0.1',
 		'port' => 3306,
-		'database' => 'phpcmsv9',
-		'username' => '',
-		'password' => '',
+		'database' => 'phpcms',
+		'username' => 'phpcms',
+		'password' => 'goGvRtFFE2w',
 		'tablepre' => 'v9_',
 		'charset' => 'utf8',
 		'type' => 'mysqli',
