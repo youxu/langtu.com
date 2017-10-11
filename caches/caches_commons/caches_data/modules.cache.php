@@ -289,6 +289,20 @@ return array (
     'installdate' => '2010-09-01',
     'updatedate' => '2010-09-06',
   ),
+  'cnzz' => 
+  array (
+    'module' => 'cnzz',
+    'name' => 'CNZZ统计',
+    'url' => 'cnzz/',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => 'CNZZ统计',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2010-09-15',
+    'updatedate' => '2010-09-15',
+  ),
   'video' => 
   array (
     'module' => 'video',
@@ -314,8 +328,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'comment' => 
   array (
@@ -328,8 +342,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'link' => 
   array (
@@ -400,8 +414,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'poster' => 
   array (
@@ -414,8 +428,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'formguide' => 
   array (
@@ -447,8 +461,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'upgrade' => 
   array (
@@ -475,8 +489,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2017-10-10',
-    'updatedate' => '2017-10-10',
+    'installdate' => '2013-01-09',
+    'updatedate' => '2013-01-09',
   ),
   'sms' => 
   array (
