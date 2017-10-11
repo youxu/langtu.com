@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<meta property="wb:webmaster" content="2d3aac51d39ba545" />
+<link href="{CSS_PATH}langtu/ie.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}reset.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}default_blue.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}foucsbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{JS_PATH}jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}jquery.sgallery.js"></script>
+<script type="text/javascript" src="{JS_PATH}search_common.js"></script>
+<script type="text/javascript" src="{JS_PATH}langtu.js"></script>
+<script type="text/javascript" src="{JS_PATH}foucsbox.js"></script>
+</head>
+<body>
+<div class="body-top">
+    <div class="content">
+    {pc:content  action="position" posid="9" order="id" num="10" cache="3600"}
+    		<div id="announ">
+                 <ul>
+                 {loop $data $k $v}
+                      <li><a href="{$v[url]}">{$v[title]}</a></li>
+                      {/loop}
+                 </ul>
+            </div>
+     {/pc}
+	 {php echo runhook('glogal_header')}
+<script type="text/javascript">
+$(function(){
+	startmarquee('announ',22,1,500,3000);
+})
+</script>
+            <div class="login lh24 blue"></div>
+    </div>
+</div>
+
+<div class="body_div">
+
+    <div id="menu">
+    	<div class="b_l"></div>
+        <div class="b_bg">
+        <map>
+    	{pc:content action="category" catid="0" num="5" siteid="$siteid" order="listorder ASC"}
+        	<ul>
+			<li>
+			<div><a href="{siteurl($siteid)}">首页</a></div>
+            <div class="b_font">Home page</div>
+			</li>
+			{loop $data $r}
+			<li>
+			<div><a href="{$r[url]}">{$r[catname]}</a></div>
+            <div class="b_font">{$r[catdir]}</div>
+			</li>
+			{/loop}
+            </ul>
+        {/pc}
+		{php echo runhook('glogal_menu')}
+        </map>
+
+        </div>
+        <div class="b_r"></div>
+    </div>
+    <div class="clear"></div>
+
+

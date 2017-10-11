@@ -1,0 +1,67 @@
+{template "content","langtu-header"}
+<!--main-->
+
+<div id="tgfw_banner"><img src="{$CATEGORYS[$catid]['image']}" border="0" /></div>
+    <div id="count">
+    	<div id="left">
+        	{template "content","langtu-left"}
+        </div>
+        <div id="tgfw_right">
+        	<div class="right_tgfw_banner"></div>
+            <div class="right_tgfw_img2"></div>
+            <div class="right_tgfw_div">
+            	<div class="tgfw_right_title">关于虚拟现实</div>
+                <div>
+                    <div class="tgfw_right_left_div">
+                        <img src="{IMG_PATH}/langtu/tgfw_img1.jpg" width="226" height="144" />
+                        <div class="tgfw_img_title">虚拟现实三维场景</div>
+                    </div>
+                    <div class="tgfw_right_font">
+                    {pc:block pos="tgfw_1"}{/pc}
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="tgfw_right_title">虚拟现实技术</div>
+                <div>
+                    <div class="tgfw_right_left_div">
+                        <img src="{IMG_PATH}/langtu/tgfw_img2.jpg"/>
+                    </div>
+                    <div class="tgfw_right_font">
+                    {pc:block pos="tgfw_2"}{/pc}
+                    	
+                    </div>
+                    <div class="clear"></div>
+                    <div class="tgfw_right_left_div m_t_10">
+                        <img src="{IMG_PATH}/langtu/tgfw_img3.jpg"/>
+                       
+                    </div>
+                    <div class="tgfw_right_font m_t_10" >
+                     {pc:block pos="tgfw_3"}{/pc}
+                    </div>
+                </div>
+            </div>
+   		  	<div class="clear"></div>
+            <div class="tgfw_cp_div">
+            	<div class="tgfw_right_title">产品应用领域</div>
+                <div class="tgfw_right_img">
+                	<ul>
+                		{pc:content action="lists" thumb="1" num="12"  catid="$catid" order="listorder desc,updatetime DESC" return="data"}
+                		{loop $data $r}
+                    	<li>
+                   	    <a href="{$r['url']}"><img src="{thumb($r[thumb],100,100)}" width="100" height="100" /></a>
+                        <p><a href="{$r['url']}">{str_cut($r['title'],16,'.')}</a></p>
+                        </li>
+                        {/loop}
+                        {/pc}
+                    </ul>
+                </div>
+                <div id="pages" class="text-c">{$pages}</div>  
+            </div>
+            
+          
+        </div>
+    </div>
+    <div class="clear"></div>
+
+
+{template "content","footer"}

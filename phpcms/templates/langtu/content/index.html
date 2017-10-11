@@ -1,0 +1,118 @@
+{template "content","langtu-header"}
+<!--main-->
+
+    <!-- 代码 开始 -->
+    <div id="foucsBox">
+        <ul class="imgCon">
+            <!--展示图片开始-->
+            {pc:content  action="position" posid="1"  order="listorder DESC" thumb="1" num="5"}
+            {loop $data $r}
+            <li>
+            <a href="{$r['url']}" target="_blank">
+                <img width="1025" height="391" src="{thumb($r['thumb'],1025,391)}" alt="{$r['title']}"/></a>
+                <div class="imgTitle"><a href="{$r['url']}" target="_blank">{str_cut($r['title'],30)}</a></div>
+                <div class="showPage"></div>
+            </li>
+             {/loop}
+             {/pc}
+            <!--展示图片结束-->
+        </ul>
+        <div class="foucs"></div>
+        <div class="rBtn foucsButton">
+            <span></span>
+            <img />
+        </div>
+        <div class="lBtn foucsButton">
+            <span></span>
+            <img />
+        </div>
+    </div>
+    <!-- 代码 结束 -->
+    <div id="count">
+    	<div class="index_left_box">
+    	{pc:content  action="lists" catid="14" order="id DESC" thumb="1" num="4" return="info"}
+        	<div class="index_left_title_bg">
+            	<div>{$CATEGORYS[14]['catname']}</div>
+                <span><a href="{$CATEGORYS[14]['url']}">more</a></span>
+            </div>
+            <div class="index_left_box_bg">
+            	<div class="index_left_pos">
+            	{loop $info $v}
+                	<div class="index_left_img_bg {if $n>2}m_t_40{/if}">
+               	    <a href="{$v['url']}"><img src="{thumb($v[thumb],186,117)}" width="186" height="117" /></a>
+                    <span><a href="{$v['url']}">{str_cut($v['title'],40)}</a></span>
+                    </div>
+                {/loop}               
+               </div> 
+            </div>
+            
+         {/pc}     
+        </div>
+         {pc:content  action="lists" catid="15" order="updatetime DESC" thumb="1" num="4" return="info"}
+         <div class="index_left_box">
+        	<div class="index_left_title_bg2">
+            	<div>{$CATEGORYS[15]['catname']}</div>
+                <span><a href="{$CATEGORYS[15]['url']}">more</a></span>
+            </div>
+            <div class="index_left_box_bg">
+            	<div class="index_left_pos">
+					{loop $info $v}
+                	<div class="index_left_img_bg {if $n>2}m_t_40{/if}">
+               	    <a href="{$v['url']}"><img src="{thumb($v[thumb],186,117)}" width="186" height="117" /></a>
+                    <span><a href="{$v['url']}">{str_cut($v['title'],40)}</a></span>
+                    </div>
+					{/loop}            
+               </div> 
+               
+            </div>
+        </div>
+		{/pc} 
+		{pc:content  action="lists" catid="18" order="listorder desc,updatetime DESC" num="4" return="info"}
+		{loop $info $v}
+
+		{if $n==1 or $n==3}<div style="padding-left:40px;">{/if}
+        <span  {if $n==2 or $n==4}style="padding-left:35px;"{/if} ><embed src="{$v['video_url']}" allowFullScreen="true" quality="high" width="460" height="460" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        </span>
+		{if  $n==2 or $n==4}</div>{/if}
+		{/loop}
+		{/pc} 
+		{pc:content  action="lists" catid="16" order="listorder desc,updatetime DESC" num="6" return="info"}
+        <div class="index_left_box m_t_10">
+        	<div class="index_hyxw_title_bg">
+        	<span><a href="{$CATEGORYS[16]['url']}">more</a></span>
+            	<div>{$CATEGORYS[16]['catname']}</div>
+            	
+            </div>
+            <ul class="index_hyxw_ul">
+            {loop $info $v}
+            	<li>•&nbsp;&nbsp;<a href="{$v['url']}" target="_blank" class="pt">{str_cut($v['title'],60)}</a>{if time()-$v[updatetime]<24*3600}<img src="{IMG_PATH}/langtu/new.jpg" width="11" height="11" />{/if}<span>({date('Y-m-d',$v['inputtime'])})</span>
+                </li>
+            {/loop}    
+            </ul>
+        </div>
+        {/pc}
+         {pc:content  action="lists" catid="17" order="updatetime DESC"  num="4" return="info"}
+        <div class="index_left_box m_t_10">
+        
+        	<div class="index_cpyc_title_bg">
+            	<div>{$CATEGORYS[17]['catname']}</div>
+            </div>
+            <div class="index_cpyc_tab">
+            	 <ul>
+            	 {loop $info $v}
+                    <li><a href="{$v['url']}">{str_cut($v['title'],60)}</a></li>
+
+				{/loop}
+                </ul>
+            </div>
+           
+        </div>
+        {/pc}
+        <div class="clear"></div>
+     
+         
+    </div>
+    <div class="clear"></div>
+    
+
+{template "content","footer"}

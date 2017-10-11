@@ -131,7 +131,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .cat-area .content p{color:#777; height:75px; overflow:hidden}
 .cat-area .content p strong{ font-size:14px; color:#333}
 /* Blogroll */
-.blogroll {}
+.blogroll { margin-top:20px;}
 .blogroll h5{ background:none; font-size:12px; margin:0 2px}
 /* 当前位置 */
 .crumbs{background: url(../images/v9/icon.png) no-repeat left -38px; padding:3px 0 3px 18px; font-family:"宋体"; border-bottom:1px solid #c3d4e7; margin-bottom:10px}

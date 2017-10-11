@@ -1,0 +1,20 @@
+<div class="left_div">
+<div id="tree">
+	<div>{$CATEGORYS[$catid]['catname']}</div>
+	<ul>
+	{pc:content action="category" catid="11" siteid="$siteid" order="listorder ASC"} 
+	{loop $data $r} 
+    <li><a href="{$r[url]}"><span>{$r[catname]}</span></a></li> 
+	{/loop} 
+	{/pc}  
+	</ul>
+</div>
+	
+</div>
+<div class="left_div">
+	<div><img src="{IMG_PATH}/langtu/left_lxwm.jpg" /></div>
+     <div class="left_font">
+     	{pc:block pos="tel"}{/pc}
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+body{ background-color:#6d5d5e; margin:0px;}
+body a{ text-decoration:none; color:#000;}
+
+/*head*/
+.body_div{
+	width:1024px; margin:0 auto; background-color:#fff;
+	}
+.clear{ clear:both;}	
+.red{ color:#F00;}
+.m_t_10{ margin-top:20px;}
+.m_t_40{ margin-top:40px;}
+#head{ text-align:right; height:20px; line-height:20px; margin:10px 90px 10px 0px;}	
+#head a { color:#000; text-decoration:none; font-size:10px;}
+
+.index_left_box a:hover img{border:1px solid #F00;}
+.index_left_box a:hover{ color:#F00; text-decoration:underline;	}
+
+#menu { margin:0 50px;}
+#menu div{float:left;}
+#menu .b_l{float:left;background:url('../../images/langtu/menu_l.jpg') no-repeat; width:189px; height:80px;}
+#menu .b_bg{float:left;background:url(../../images/langtu/ment_bg.jpg) repeat-x;height:80px; width:724px;}
+#menu .b_r{ float:left;background:url(../../images/langtu/menu_r.jpg) no-repeat;width:11px; height:80px;}
+#menu ul{ list-style:none; height:80px; line-height:80px;}
+#menu li { text-align:center; cursor:pointer; float:left; text-align:center;width:123px;line-height:20px; padding-top:10px;}
+#menu .li_hover{  cursor:pointer;	 border-left:1px  solid #fff; border-right:1px  solid #fff;float:left;text-align:center;background:url(../../images/langtu/menu_bg_h.jpg) repeat-x;  line-height:20px; padding-top:10px;}
+#menu a{font-family:"微软雅黑", "黑体"; color:#fff; vertical-align:bottom; text-decoration:none; font-size:14px; width:123px; height:14px;  padding-top:0px; text-align:center;}
+#menu li div{ width:123px;}
+#menu .b_font{font-size:12px;  text-align:center; color:#FFF;}
+
+
+#index_announce{padding-left:50px;}
+#index_announce span{color:red;font-weight:bold;}
+#index_announce a{color:red;font-weight:bold;}
+
+#banner { background:url(../../images/langtu/banner1.jpg) no-repeat top; width:1024px; height:340px; border-bottom:1px solid #a7aebe;}
+#fzal_banner{ background:url(../../images/langtu/fzal_banner.jpg) no-repeat; width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#fzyx_banner{ background:url(../../images/langtu/fzyx_banner.jpg) no-repeat; width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#ghsj_bnnaer{ background:url(../../images/langtu/ghsj_banner.jpg) no-repeat; width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#cpxc_bnnaer{ background:url(../../images/langtu/cpxc_banner.jpg) no-repeat; width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#gsjj_banner{  width:1024px; height:341px;}
+#tgfw_banner{ width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#index_banner{ background:url(../../images/langtu/index_banner.jpg) no-repeat ;width:1024px; height:341px; border-bottom:1px solid #a7aebe;}
+#tree {text-align:left;}
+#tree div{ border-bottom:1px solid #a0a0a0; width:170px; background:url(../../images/langtu/car_icon.jpg) no-repeat; padding-left:25px; height:25px; font-size:16px;color:#000; font-weight:bold;}
+#tree ul{padding-top:30px;}
+#tree li{ background:url(../../images/langtu/car_title_icon.jpg) no-repeat;background-position: 0px 7px; padding-top:3px;padding-left:15px; font-size:12px; height:25px; letter-spacing:2px; border-bottom:1px dashed #a0a0a0}
+
+#left{ float:left; padding-left:20px; width:203px; margin:0 auto; text-align:center;}
+
+#left .left_div{ width:170px; padding-top:20px;}
+
+#left .left_font{ border-left:1px solid #a8a8a8; border-right:1px solid #a8a8a8;border-bottom:1px solid #a8a8a8; padding-bottom:30px; padding-top:10px; background:#f6f6f6;}
+#left .left_font ul{ list-style:none;}
+#left .left_font li{ background:url(../../images/langtu/left_li_icon.jpg) no-repeat ; background-position:8px ; padding-left:20px; text-align:left; height:30px; line-height:30px; float:left; width:55px;}
+#left .left_font a{ text-decoration:none;color:#7d7d7d;}
+#left .left_font a:hover{color:red;text-decoration:underline;}
+#left .area{ text-align:left; color:#000; padding-left:10px;}
+#left .tel{ text-align:left; color:#000; padding:10px;}
+.tel span{ color:#000}
+
+
+#right {padding:10px 10px 10px 30px; float:right;border-left:1px solid #a7aebe; }
+#gsjj_right {padding:10px 10px 10px 0px; float:left; width:760px;}
+#right .r_banner{background:url(../../images/langtu/right_banner.jpg) no-repeat; width:733px; height:250px; margin-right:20px;}
+#right .right_cp_banner{background:url(../../images/langtu/right_cp_banner.jpg) no-repeat; width:733px; height:250px; margin-right:20px;}
+#right .right_fz_banner{background:url(../../images/langtu/right_fzpx_banner.jpg) no-repeat; width:733px; height:250px; margin-right:20px;}
+#right .right_fzyx_banner{background:url(../../images/langtu/right_fzyx_banner.jpg) no-repeat; width:733px; height:250px; margin-right:20px;}
+#right .right_ghsj_banner{ background:url(../../images/langtu/right_ghsj_banner.jpg) no-repeat; width:733px; height:250px; margin-right:20px;}
+
+/*gsjj*/
+#gsjj_right .right_gsjj_banner{ background:url(../../images/langtu/right_gsjj_banner.jpg) no-repeat; width:746px; height:194px; margin-right:10px;}
+#gsjj_right .font_div{ margin-top:30px; margin-left:20px;}
+#gsjj_right .font_div p{ text-indent:2em; line-height:20px; letter-spacing:1px;}
+#gsjj_right .right_title{ text-align:left; font-weight:bold; text-indent:0em;}
+
+
+#right .count{ margin-top:30px; width:714px;}
+#right .r_l_img{ float:left; background:url(../../images/langtu/right_img1.jpg) no-repeat; width:302px; height:196px;}
+#right .r_l_img2{ float:left; background:url(../../images/langtu/right_img2.jpg) no-repeat; width:302px; height:196px;}
+#right .r_l_img3{ float:left; background:url(../../images/langtu/right_img3.jpg) no-repeat; width:302px; height:196px;}
+#right .r_l_img4{ float:left; background:url(../../images/langtu/right_img4.jpg) no-repeat; width:302px; height:204px;}
+#right .r_l_font{ float:left; width:300px; text-align:left; padding-left:70px; padding-right:20px; padding-top:20px;}
+
+
+/*cp*/
+#right .cp_img{ margin-top:30px; margin-bottom:20px; background:url(../../images/langtu/cp_img.jpg) no-repeat; width:722px; height:925px;}
+#right .cp_right_font{ margin-left:60px;padding-top:80px; width:220px;}
+#right .cp_right_font p{ color:#000;font-size:14px; clear:both; padding-top:5px;}
+#right .cp_right_font span{color:#F00; width:180px; float:right; letter-spacing:1px; line-height:20px; font-size:13px;}
+
+
+/*fzpx*/
+#right .right_fzpx_img1{ background:url(../../images/langtu/right_fzpx_img1.jpg) no-repeat; width:723px; height:658px; margin-top:50px; margin-bottom:40px;}
+#right .right_fzpx_img2{ background:url(../../images/langtu/right_fzpx_img2.jpg) no-repeat; width:720px; height:656px; margin-top:50px; margin-bottom:40px;}
+
+/*fzyx*/
+#right .right_fzyx_img1{ background:url(../../images/langtu/right_fzyx_img1.jpg) no-repeat; width:721px; height:658px;margin-top:50px; margin-bottom:40px;}
+#right .right_fzyx_img2{ background:url(../../images/langtu/right_fzyx_img2.jpg) no-repeat; width:721px; height:658px;margin-top:50px; margin-bottom:40px;}
+#right .right_fzyx_font{ margin-left:30px;padding-top:30px; width:240px;}
+#right .right_fzyx_font p{ color:#000;font-size:14px; clear:both; padding-top:5px;}
+#right .right_fzyx_font span{color:#F00; width:180px; float:left; letter-spacing:1px; width:240px; line-height:20px; font-size:13px;}
+
+
+/*ghsj*/
+#right .right_ghsj_img1{ background:url(../../images/langtu/right_ghsj_img1.jpg) no-repeat; width:722px; height:657px;margin-top:50px; margin-bottom:40px;}
+#right .right_ghsj_img2{ background:url(../../images/langtu/right_ghsj_img2.jpg) no-repeat; width:721px; height:657px;margin-top:50px; margin-bottom:40px;}
+#right .xu{ background:url(../../images/langtu/xu.jpg) repeat-x; height:1px; line-height:1px; clear:both}
+#gsjj_right .xu{ margin-top:40px; background:url(../../images/langtu/xu.jpg) repeat-x; height:1px; line-height:1px; clear:both}
+
+/*tgfw*/
+#tgfw_right {padding:10px 10px 10px 0px; float:left; width:760px; border-left:1px solid #a7aebe;}
+#tgfw_right .right_tgfw_banner{ background:url(../../images/langtu/right_tgfw_img1.jpg) no-repeat; width:585px; height:138px;}
+#tgfw_right .right_tgfw_img2{ background:url(../../images/langtu/right_tgfw_img2.jpg) no-repeat; width:717px; height:241px; margin-left:30px;}
+#tgfw_right .right_tgfw_div{ margin-left:30px;}
+#tgfw_right .tgfw_right_title{ color:#a00000; font-size:15px; height:25px; line-height:25px; margin:18px 0px;}
+#tgfw_right .tgfw_right_left_div{ float:left; width:238px;}
+#tgfw_right .tgfw_img_title{ text-align:center; color:#a7aebe; font-size:12px; height:25px; line-height:25px;}
+#tgfw_right .tgfw_right_font{ color:#4f4f4f; float:left; width:490px; letter-spacing:1px; height:20px; line-height:20px;
+}
+#tgfw_right .tgfw_cp_div{ margin-left:30px;}
+#tgfw_right .tgfw_right_img{ width:666px; margin-top:20px; margin-bottom:20px; text-align:center}
+#tgfw_right .tgfw_right_img ul{ list-style:none; width:466px; margin-left:100px;}
+#tgfw_right .tgfw_right_img li{ float:left; width:100px; margin-left:13px;_margin-left:6px;}
+#tgfw_right .tgfw_right_img img{ border:1px solid #6e6e6e;}
+#tgfw_right .tgfw_right_img a:hover { color:#F00; text-decoration:underline;}
+#tgfw_right .tgfw_right_img a:hover img{ border:1px solid #F00;}
+#tgfw_right .tgfw_right_img p{ height:20px; line-height:20px; color:#5f5f5f; margin-bottom:20px;}
+
+#right .tgfw_right_title{ color:#a00000; font-size:15px; height:25px; line-height:25px; margin:18px 0px;}
+#right .tgfw_right_img{ width:666px; margin-top:20px; margin-bottom:20px; text-align:center}
+#right .tgfw_right_img ul{ list-style:none;  margin-left:20px;}
+#right .tgfw_right_img li{ float:left; width:200px; margin-left:13px;_margin-left:6px;}
+#right .tgfw_right_img img{ border:1px solid #6e6e6e;}
+#right .tgfw_right_img a:hover { color:#F00; text-decoration:underline;}
+#right .tgfw_right_img a:hover img{ border:1px solid #F00;}
+#right .tgfw_right_img p{ height:20px; line-height:20px; color:#5f5f5f; margin-bottom:20px;}
+
+/*index*/
+.index_left_box{ float:left; margin-left:40px;_margin-left:30px;}
+.index_left_title_bg{ background:url(../../images/langtu/index_title_bg.jpg) no-repeat; width:458px; height:78px;}
+.index_left_title_bg2{ background:url(../../images/langtu/index_title_bg2.jpg) no-repeat; width:458px; height:78px;}
+.index_left_title_bg div{ float:left; margin-top:20px; margin-left:60px; width:200px; letter-spacing:2px; font-size:14px;_margin-left:30px;}
+.index_left_title_bg span{ float:right ; margin-top:20px; margin-right:30px;}
+.index_left_title_bg2 div{ float:left; margin-top:20px; margin-left:70px; width:200px; letter-spacing:2px; font-size:14px;;_margin-left:40px;}
+.index_left_title_bg2 span{ float:right ; margin-top:20px; margin-right:30px;}
+.index_left_box_bg{ background:url(../../images/langtu/index_box_bg.jpg) repeat-x top #f3f3f3; height:376px;position:relative;  width:459px;}
+.index_left_pos{ position:absolute; top:-20px; }
+
+.index_left_pos img{ margin-left:5px; margin-top:5px;}
+.index_left_pos span{ height:30px; line-height:30px; text-align:center; display:block;}
+.index_left_img_bg{ background:url(../../images/langtu/index_img_bg.jpg) no-repeat; width:201px; height:162px; float:left; margin-left:20px;_margin-left:10px;}
+
+.index_right_img_bg{ background:url(../../images/langtu/index_right_box_bg.jpg) no-repeat; width:406px; height:165px; text-align:center; margin-left:30px;}
+.index_right_img_div{ text-align:center;}
+.index_right_img_font{ text-align:center; height:30px; line-height:30px;}
+
+.index_hyxw_title_bg{ background:url(../../images/langtu/index_hyxw_title_bg.jpg) no-repeat; width:458px; height:83px;}
+.index_hyxw_title_bg span{ float:right ; margin-top:30px; margin-right:30px;}
+
+.index_hyxw_title_bg div{  padding-top:50px; margin-left:110px; letter-spacing:4px; font-size:14px;}
+.index_hyxw_ul{ list-style:none;border-left:1px solid #bbc1cd; border-right:1px solid #bbc1cd; }
+.index_hyxw_ul li{ width:422px; padding-left:30px; border-bottom:1px solid #dbdbdc; height:30px; line-height:30px; position:relative}
+.index_hyxw_ul li img{padding-left:30px;}
+.index_hyxw_ul li span{ float:right; margin-right:15px; _margin-right:0px; position:absolute;right:0px; top:0px}
+.index_hyxw_ul a{_display：inline}
+.index_hyxw_ul li a .red{ color:#a60000}
+.index_hyxw_ul li a .pt{ color:#979797;}
+
+.index_cpyc_title_bg{ background:url(../../images/langtu/index_cpyc_title_bg.jpg) no-repeat; width:460px; height:73px;}
+.index_cpyc_title_bg div{  padding-top:50px; margin-left:110px; letter-spacing:4px; font-size:14px;}
+.index_cpyc_tab{ background:url(../../images/langtu/index_cpyc_tab_bg.jpg) no-repeat bottom; height:147px;}
+.index_cpyc_tab ul{  width:300px; margin-left:50px; margin-top:20px; list-style:none}
+.index_cpyc_tab li{ line-height:30px; height:30px; border-bottom:1px solid #dbdbdc; text-align:center} 
+
+.index_lxfs{ width:170px; margin-left:40px; margin-top:10px; _margin-left:60px;*margin-top:20px;}
+.index_lxfs .left_font{ border-left:1px solid #a8a8a8; border-right:1px solid #a8a8a8;border-bottom:1px solid #a8a8a8; padding-bottom:30px; padding-top:10px; background:#f6f6f6;}
+.index_lxfs .area{ text-align:left; font-weight:bold;color:#afad31; padding-left:20px;}
+.index_lxfs .tel{ text-align:left; color:#707070; padding:10px;}
+
+.head_login{
+	text-align:right
+	}
+.head_login span{ margin:2px 3px;}	
+.head_login a{ color:#000; text-decoration:none; }
+.head_login a;hover{ color:#000;  text-decoration:none; }
+#foot{ width:960px; margin:0 auto; height:100px;text-align:center;line-height:100px; border-top:1px dashed #ccc;margin-top:10px;}
+#foot a{ color:#000;text-decoration:none;}
+.ad_right{background:url(../../images/langtu/ad_right.png) no-repeat;width:209px; height:67px;padding-top:140px;padding-left:30px;}
+
+/*menu*/
+

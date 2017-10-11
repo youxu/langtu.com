@@ -1,0 +1,33 @@
+{template "content","langtu-header"}
+<!--main-->
+
+<div id="tgfw_banner"><img src="{$CATEGORYS[$catid]['image']}" border="0" /></div>
+    <div id="count">
+    	<div id="left">
+        	{template "content","langtu-left"}
+        </div>
+        <div id="right">
+        	<div class="r_banner"></div>
+            <div class="tgfw_cp_div">
+            	<div class="tgfw_right_title">产品展示</div>
+                <div class="tgfw_right_img">
+                {pc:content action="lists"  thumb="1" catid="$catid" num="9" order="listorder,id DESC" page="$page"}
+                	<ul>
+                	{loop $data $r}
+                    	<li>
+                   	    <a href="{$r['url']}"><img src="{thumb($r[thumb],200,200)}" width="200" height="200" /></a>
+                        <p><a href="{$r['url']}">{str_cut($r['title'],20)}</a></p>
+                        </li>
+                    {/loop}   
+                    </ul>
+                {/pc}    
+                </div>
+                <div class="clear"></div>
+               <div id="pages" class="text-c">{$pages}</div> 
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+
+{template "content","footer"}
