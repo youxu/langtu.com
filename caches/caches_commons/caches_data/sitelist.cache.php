@@ -3,7 +3,7 @@ return array (
   1 => 
   array (
     'siteid' => '1',
-    'name' => '默认站点',
+    'name' => '朗途科技',
     'dirname' => '',
     'domain' => 'http://www.langtuvr.com/',
     'site_title' => '虚拟现实|增强现实|vr|web3d|unity3d| - 【北京朗途科技有限责任公司】',

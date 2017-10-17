@@ -1,6 +1,6 @@
 <?php
 return array(
-//网站路径
+ 'alivulfix' => 'yes',//网站路径
 'web_path' => '/',
 //Session配置
 'session_storage' => 'files',
@@ -35,7 +35,7 @@ return array(
 'admin_log' => 1, //是否记录后台操作日志
 'errorlog' => 1, //1、保存错误日志到 cache/error_log.php | 0、在页面直接显示
 'gzip' => 1, //是否Gzip压缩后输出
-'auth_key' => 'NyE9T4cYfCWe7wwZC1Ke', //密钥
+'auth_key' => 'U4MefJ5VaOxX72Wfzz5D', //密钥
 'lang' => 'zh-cn',  //网站语言包
 'lock_ex' => '1',  //写入缓存时是否建立文件互斥锁定（如果使用nfs建议关闭）
 
@@ -45,7 +45,7 @@ return array(
 'phpsso' => '1',	//是否使用phpsso
 'phpsso_appid' => '1',	//应用id	
 'phpsso_api_url' => 'http://www.langtuvr.com/phpsso_server',	//接口地址
-'phpsso_auth_key' => 'CHKgBH76whnnribYmEZanlyfOyT0k5BB', //加密密钥
+'phpsso_auth_key' => 'aN3G0rUOAHtEmU5fR9crKOEr3_Sau9XI', //加密密钥
 'phpsso_version' => '1', //phpsso版本
 
 'html_root' => '/html',//生成静态文件路径

@@ -18,14 +18,14 @@ return array (
     'islink' => '0',
     'username' => 'phpcms',
     'inputtime' => '1391161378',
-    'updatetime' => '1498323088',
+    'updatetime' => '1508137076',
     'video_url' => '',
     'hitsid' => 'c-1-77',
-    'views' => '2164',
+    'views' => '2166',
     'yesterdayviews' => '2',
     'dayviews' => '1',
-    'weekviews' => '12',
-    'monthviews' => '42',
+    'weekviews' => '1',
+    'monthviews' => '2',
   ),
   76 => 
   array (
