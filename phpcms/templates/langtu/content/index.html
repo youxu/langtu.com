@@ -33,7 +33,9 @@
     	{pc:content  action="lists" catid="14" order="id DESC" thumb="1" num="4" return="info"}
         	<div class="index_left_title_bg">
             	<div>{$CATEGORYS[14]['catname']}</div>
-                <span><a href="{$CATEGORYS[14]['url']}">more</a></span>
+                <!-- <span><a href="{$CATEGORYS[14]['url']}">more</a></span> -->
+                <span><a href="/index.php?m=content&c=index&a=lists&catid=11">more</a></span>
+
             </div>
             <div class="index_left_box_bg">
             	<div class="index_left_pos">
@@ -42,11 +44,11 @@
                	    <a href="{$v['url']}"><img src="{thumb($v[thumb],186,117)}" width="186" height="117" /></a>
                     <span><a href="{$v['url']}">{str_cut($v['title'],40)}</a></span>
                     </div>
-                {/loop}               
-               </div> 
+                {/loop}
+               </div>
             </div>
-            
-         {/pc}     
+
+         {/pc}
         </div>
          {pc:content  action="lists" catid="15" order="updatetime DESC" thumb="1" num="4" return="info"}
          <div class="index_left_box">
@@ -61,12 +63,12 @@
                	    <a href="{$v['url']}"><img src="{thumb($v[thumb],186,117)}" width="186" height="117" /></a>
                     <span><a href="{$v['url']}">{str_cut($v['title'],40)}</a></span>
                     </div>
-					{/loop}            
-               </div> 
-               
+					{/loop}
+               </div>
+
             </div>
         </div>
-		{/pc} 
+		{/pc}
 		{pc:content  action="lists" catid="18" order="listorder desc,updatetime DESC" num="4" return="info"}
 		{loop $info $v}
 
@@ -75,25 +77,25 @@
         </span>
 		{if  $n==2 or $n==4}</div>{/if}
 		{/loop}
-		{/pc} 
+		{/pc}
 		{pc:content  action="lists" catid="16" order="listorder desc,updatetime DESC" num="6" return="info"}
         <div class="index_left_box m_t_10">
         	<div class="index_hyxw_title_bg">
         	<span><a href="{$CATEGORYS[16]['url']}">more</a></span>
             	<div>{$CATEGORYS[16]['catname']}</div>
-            	
+
             </div>
             <ul class="index_hyxw_ul">
             {loop $info $v}
             	<li>•&nbsp;&nbsp;<a href="{$v['url']}" target="_blank" class="pt">{str_cut($v['title'],60)}</a>{if time()-$v[updatetime]<24*3600}<img src="{IMG_PATH}/langtu/new.jpg" width="11" height="11" />{/if}<span>({date('Y-m-d',$v['inputtime'])})</span>
                 </li>
-            {/loop}    
+            {/loop}
             </ul>
         </div>
         {/pc}
          {pc:content  action="lists" catid="17" order="updatetime DESC"  num="4" return="info"}
         <div class="index_left_box m_t_10">
-        
+
         	<div class="index_cpyc_title_bg">
             	<div>{$CATEGORYS[17]['catname']}</div>
             </div>
@@ -105,14 +107,14 @@
 				{/loop}
                 </ul>
             </div>
-           
+
         </div>
         {/pc}
         <div class="clear"></div>
-     
-         
+
+
     </div>
     <div class="clear"></div>
-    
+
 
 {template "content","footer"}
