@@ -47,7 +47,7 @@
 					</tr>
                                         <tr>
                                                 <td>地址：</td>
-                                                <td>北京市丰台科技园盈坤世纪C座11层</td>
+                                                <td>北京市经济技术开发区锋创科技园6号楼201室</td>
                                         </tr>
 					<tr>
 						<td width="50">电话：</td>
@@ -85,7 +85,7 @@
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.310653,39.833193);//定义一个中心点坐标
+        var point = new BMap.Point(116.575767,39.788043);//定义一个中心点坐标
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
@@ -112,7 +112,7 @@
     }
 
     //标注点数组
-    var markerArr = [{title:"北京朗途科技有限责任公司",content:"地址：丰台科技园盈坤世纪C座11层</br>电话：15801267031</br>标签：软件公司&nbsp;互联网公司",point:"116.310653|39.833193",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"北京朗途科技有限责任公司",content:"地址：北京市经济技术开发区锋创科技园6号楼201室</br>电话：15801267031</br>标签：软件公司&nbsp;互联网公司",point:"116.575767,39.788043",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
